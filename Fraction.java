@@ -1,55 +1,32 @@
 
 public class Fraction {
 
-	private int numerator;
-	private int denominator;
-	private int num;
-	private int den;
+	private int n1;
+	private int d1;
+	
 	
 	
 	public int getNumerator() {
-		return numerator;
+		return n1;
 	}
 
 
 	public void setNumerator(int numerator) {
-		this.numerator = numerator;
+		this.n1 = numerator;
 	}
 
 
 	public int getDenominator() {
-		return denominator;
+		return d1;
 	}
 
 
 	public void setDenominator(int denominator) {
-		this.denominator = denominator;
+		this.d1 = denominator;
 	}
 
 
-	public Fraction (String passFraction) {
-		
-		int separatorLocation = passFraction.indexOf("/");
-		String strNumerator = passFraction.substring(0,
-				separatorLocation);
-		String strDenominator = passFraction
-				.substring(separatorLocation + 1);
-
-		this.numerator = Integer.parseInt(strNumerator);
-		this.denominator = Integer.parseInt(strDenominator);
-
-		
-	}
-
-	public int getNum() {
-		return num;
-	}
-
-	public int getDen() {
-		return den;
-	}
-	
-	public Fraction (String passFraction1, String passFraction2) {
+	public Fraction (String passFraction1) {
 		
 		int separatorLocation = passFraction1.indexOf("/");
 		String strNumerator = passFraction1.substring(0,
@@ -57,8 +34,12 @@ public class Fraction {
 		String strDenominator = passFraction1
 				.substring(separatorLocation + 1);
 
-		this.num = Integer.parseInt(strNumerator);
-		this.den = Integer.parseInt(strDenominator);
+		this.n1 = Integer.parseInt(strNumerator);
+		this.d1 = Integer.parseInt(strDenominator);
+
 		
 	}
+
+	
+	
 }
